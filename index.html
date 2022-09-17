@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="assets/img/favicon_144x144.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <audio src="" id="audio-source"></audio>
+
+    <!-- Home Section -->
+
+    <section class="home-section">
+
+        <!-- Carousel -->
+
+        <div class="carousel">
+            <img src="assets/img/Allah is My Lord.jpg" class="active" alt="">
+            <img src="assets/img/Amantu Billahi  - Arabic.jpg" alt="">
+            <img src="assets/img/Muhammad Nabina.jpg" alt="">
+            <img src="assets/img/My Hope (Allah).jpg" alt="">
+            <img src="assets/img/Tasbih.jpg" alt="">
+            <img src="assets/img/The Beauty of Existence.jpg" alt="">
+            <img src="assets/img/The Way of The Tears.jpg" alt="">
+        </div>
+
+        <!-- Playlists -->
+
+        <h1 class="heading">recently played</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="assets/img/Tasbih.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top international</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/Allah is My Lord.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">BTS collection</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/Amantu Billahi  - Arabic.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Ayisha Abdul Basith</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/Muhammad Nabina.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top 50</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/My Hope (Allah).jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Muhammad Al Muqit</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/The Beauty of Existence.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">bollywood hits</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/The Way of The Tears.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top 10</p>
+            </div>
+        </div>
+        <h1 class="heading">based on your listening</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="assets/img/Tasbih.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top international</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/Allah is My Lord.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">BTS collection</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/Amantu Billahi  - Arabic.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Ayisha Abdul Basith Collection</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/Muhammad Nabina.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top 50</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/My Hope (Allah).jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Muhammad Al Muqit Collection</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/The Beauty of Existence.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">bollywood hits</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/img/The Way of The Tears.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top 10</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="music-player-section">
+
+        <img src="assets/img/back.png" class="back-btn icon hide" alt="">
+        <img src="assets/img/nav.png" class="nav-btn icon hide" alt="">
+
+        <h1 class="current-song-name">Allah is My Lord</h1>
+        <p class="artist-name hide">Muhammad Al Muqit</p>
+
+        <img src="assets/img/Allah is My Lord.jpg" class="cover hide" alt="">
+
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+
+        <div class="controls">
+            <span class="fa-solid fa-rotate-right"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-forward active"></i>
+            </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fa-solid fa-volume-high"></span>
+        </div>
+
+    </section>
+
+    <section class="playlist">
+
+        <img src="assets/img/back.png" class="back-btn icon" alt="">
+
+        <h1 class="title">playlist</h1>
+
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="assets/img/Allah is My Lord.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Allah is My Lord</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/img/Amantu Billahi  - Arabic.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Amantu Billahi - Arabic</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/img/Muhammad Nabina.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Muhammad Nabina</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/img/My Hope (Allah).jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">My Hope (Allah)</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/img/Tasbih.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Tasbih</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/img/The Beauty of Existence.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">The Beauty of Existence</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/img/The Way of The Tears.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">The Way of The Tears</p>
+        </div>
+
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
